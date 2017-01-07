@@ -1,20 +1,54 @@
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
+<nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
+
+            <!-- Collapsed Hamburger -->
+            <!--
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
+                <span class="sr-only">Toggle Navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Learning Laravel</a>
+            -->
+            <!-- Branding Image -->
+            <a class="navbar-brand" href="{{ url('/') }}">
+                {{ config('app.name', 'Laravel') }}
+            </a>
         </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+        <div class="collapse navbar-collapse" id="app-navbar-collapse">
+            <!-- Left Side Of Navbar -->
+            <ul class="nav navbar-nav">
+                &nbsp;
+            </ul>
+
+            <!-- Right Side Of Navbar -->
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/contact">Contact</a></li>
-                <li><a href="/contact">Member</a></li>
+                <li><a href="{{ url('/about') }}" class="navbbar-item">About</a></li>
+                <li><li><a href="{{ url('/contact') }}" class="navbbar-item">Contact</a></li>
+                <!-- Authentication Links -->
+                @if (Auth::guest())
+                    <li><a href="{{ url('/login') }}" class="navbar-item">Login</a></li>
+                    <li><a href="{{ url('/register') }}">Register</a></li>
+                @else
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            {{ Auth::user()->name }}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ url('/logout') }}"
+                            onclick="event.preventDefault();
+                            document.getElementById('logout-form').submit();">Logout
+                        </a>
+                    </li>
+
+                    <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
+                        {{ csrf_field() }}
+                    </form>
+
+                @endif
             </ul>
         </div>
     </div>
