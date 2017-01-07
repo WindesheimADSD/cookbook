@@ -26,6 +26,8 @@
 
     <!-- Bootstrap core CSS -->
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="/css/ladda-themeless.min.css">
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet'
           type='text/css'>
     <link rel="stylesheet" href="/css/sweetalert.css">
@@ -42,5 +44,11 @@
 
     <script src="/js/sweetalert.min.js"></script>
     @include('sweet::alert')
+
+
+    <!-- Loading buttons -->
+    <script src="/js/spin.min.js"></script>
+    <script src="/js/ladda.min.js"></script>
+    <script src="/js/custom_script.js"></script>
 </body>
 </html>

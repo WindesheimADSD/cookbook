@@ -22,7 +22,7 @@
                         <label for="image">Choose an image</label>
                         <input type="file" id="image" name="image">
                     </div>
-                    <button type="submit" class="btn btn-default">Upload</button>
+                    <button type="submit" class="btn btn-default ladda-button " data-style="expand-left" >Upload</button>
 
                 </form>
             </div>
