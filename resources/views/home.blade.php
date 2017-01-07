@@ -23,6 +23,7 @@
                         <input type="file" id="image" name="image">
                     </div>
                     <button type="submit" class="btn btn-default">Upload</button>
+
                 </form>
             </div>
         </div>
