@@ -18,3 +18,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
+Route::post('/upload', 'ImagesController@store');
