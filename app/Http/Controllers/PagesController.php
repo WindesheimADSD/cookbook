@@ -15,7 +15,6 @@ class PagesController extends Controller
     // ABOUT
     public function about()
     {
-        //alert()->success('This is our about page', 'Have a great day')->persistent('Close');
         return view('about');
     }
     // CONTACT

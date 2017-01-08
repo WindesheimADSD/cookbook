@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('shared.master')
 
 @section('content')
 <div class="container">
@@ -62,7 +62,7 @@
 
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-primary ladda-button" data-style="expand-left" data-size="s" data-color="green">
                                     Register
                                 </button>
                             </div>

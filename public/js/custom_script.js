@@ -1,4 +1,4 @@
-Ladda.bind( 'input[type=submit]', { timeout: 10000 } );
+Ladda.bind( 'input[type=submit]', { timeout: 100000 } );
 
 // Bind normal buttons
 Ladda.bind( '.ladda-button', { timeout: 10000 } );

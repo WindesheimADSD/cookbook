@@ -17,4 +17,15 @@ class RecipeController extends Controller
     {
         return view('recipes.r106');
     }
+
+    public function r201()
+    {
+        alert()->success('This is our Recipe 201 page',
+            'To show a recipe works(Recipe 201)')->persistent('Close');
+        return view('recipes.r201');
+    }
+    public function r202()
+    {
+        return view('recipes.r202');
+    }
 }

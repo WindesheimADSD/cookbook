@@ -5,16 +5,12 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="page-header">
-                <h1>Recipes</h1>
+                <h1>Recipe 201</h1>
+                <p>The beautiful notifications</p>
             </div>
-            <div class="text-info">
-                <p>Onder het nav item recipes vind je de uitwerkingen van alle opdrachtenx§.</p>
-            </div>
+
 
         </div>
-
-
-
     </div>
 </div>
 @endsection

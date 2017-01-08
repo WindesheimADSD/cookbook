@@ -29,18 +29,18 @@
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Recipes
                         <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="{{ url('/r101') }}">Recipe 101</a></li>
-                        <li><a href="#">Recipe 102</a></li>
-                        <li><a href="#">Recipe 103</a></li>
-                        <li><a href="#">Recipe 104</a></li>
-                        <li><a href="#">Recipe 105</a></li>
+                        {{--<li><a href="{{ url('/r101') }}">Recipe 101</a></li>--}}
+                        {{--<li><a href="#">Recipe 102</a></li>--}}
+                        {{--<li><a href="#">Recipe 103</a></li>--}}
+                        {{--<li><a href="#">Recipe 104</a></li>--}}
+                        <li><a href="{{ url('/register') }}">Recipe 105</a></li>
                         <li><a href="{{ url('/r106') }}">Recipe 106</a></li>
                         <li><a href="{{ url('/blog') }}">Recipe 107</a></li>
-                        <li><a href="#">Recipe 108</a></li>
-                        <li><a href="#">Recipe 109</a></li>
-                        <li><a href="#">Recipe 110</a></li>
-                        <li><a href="#">Recipe 201</a></li>
-                        <li><a href="#">Recipe 202</a></li>
+                        <li><a href="{{ url('/blog') }}">Recipe 108</a></li>
+                        {{--<li><a href="#">Recipe 109</a></li>--}}
+                        {{--<li><a href="#">Recipe 110</a></li>--}}
+                        <li><a href="{{ url('/r201') }}">Recipe 201</a></li>
+                        <li><a href="{{ url('/r202') }}">Recipe 202</a></li>
                     </ul>
                 </li>
                 <li>

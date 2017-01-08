@@ -17,7 +17,7 @@
 @yield('content')
 
 <script src="/js/sweetalert.min.js"></script>
-{{--@include('sweet::alert')--}}
+@include('sweet::alert')
 
 <!-- Loading buttons -->
 <script src="/js/spin.min.js"></script>

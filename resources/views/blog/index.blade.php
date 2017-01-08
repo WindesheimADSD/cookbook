@@ -14,7 +14,7 @@
             <p> There is no post.</p>
         @else
                 <div class="page-header">
-                    <h1>Recipe 107</h1>
+                    <h1>Recipe 107 and 108</h1>
                 </div>
             @foreach ($posts as $post)
                 <div class="panel panel-default">
