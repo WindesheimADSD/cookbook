@@ -19,3 +19,10 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 Route::post('/upload', 'ImagesController@store');
+Route::resource('posts', 'PostsController');
+
+Route::get('/r101', 'RecipeController@r101');
+Route::get('/r106', 'RecipeController@r106');
+
+//Recipe 107
+Route::get('/blog', 'BlogController@index');
